@@ -1,0 +1,23 @@
+{
+  "name": "snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "html",
+          "jade",
+          "pug",
+          "eruby",
+          "javascriptreact",
+          "htmldjango",
+          "astro"
+        ],
+        "path": "html.json"
+      },
+      {
+        "language": ["typescriptreact"],
+        "path": "reactts.json"
+      }
+    ]
+  }
+}
