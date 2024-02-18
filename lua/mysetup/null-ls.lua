@@ -6,7 +6,7 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
   debug = false,
   sources = {
-    formatting.prettier,
-    diagnostics.eslint,
+    formatting.prettierd,
+    diagnostics.eslint_d,
   },
 })

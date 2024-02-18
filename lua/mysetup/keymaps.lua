@@ -10,8 +10,8 @@ nmap("<A-k>", ":m .-2<CR>") -- move line up
  
 nmap("<leader>b", ":b") -- search buffer
 nmap("<leader>ls", ":ls<CR>") -- list buffers
-nmap("<leader>bdd", ":bd<CR>") -- delete current buffer
-nmap("<leader>bdi", ":bd") -- delete current buffer by index
+nmap("<leader>d", ":bd<CR>") -- delete current buffer
+nmap("<leader>D", ":bd") -- delete current buffer by index
 
 nmap("<Tab>", ":bnext<CR>") -- next buffer
 nmap("<S-Tab>", ":bprev<CR>") -- prev buffer
@@ -19,3 +19,6 @@ nmap("<S-Tab>", ":bprev<CR>") -- prev buffer
 nmap("<leader>'", ":!") -- open terminal
 
 nmap("<C-n>", "viw") -- select word
+
+nmap("<C-j>", "<C-e>") -- scoll down
+nmap("<C-k>", "<C-y>") -- scoll top

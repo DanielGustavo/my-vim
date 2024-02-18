@@ -61,5 +61,11 @@ require("lazy").setup({
     config = function(_, opts) require'lsp_signature'.setup(opts) end
   },
 
-  { 'jose-elias-alvarez/null-ls.nvim' }
+  { 'jose-elias-alvarez/null-ls.nvim' },
+
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {}
+  },
 })
