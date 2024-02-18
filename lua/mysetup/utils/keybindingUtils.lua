@@ -6,6 +6,11 @@ function nmap(shortcut, command)
   map('n', shortcut, command)
 end
 
+
+function vmap(shortcut, command)
+  map('v', shortcut, command)
+end
+
 function imap(shortcut, command)
   map('i', shortcut, command)
 end
