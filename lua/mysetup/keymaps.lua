@@ -22,3 +22,5 @@ nmap("<C-n>", "viw") -- select word
 
 nmap("<C-j>", "<C-e>") -- scoll down
 nmap("<C-k>", "<C-y>") -- scoll top
+
+nmap("<leader>L", "<C-6>") -- switch to last opened buffer
