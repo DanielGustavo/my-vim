@@ -1,3 +1,17 @@
+local lsp_zero = require('lsp-zero')
+
+lsp_zero.format_on_save({
+  format_opts = {
+    async = false,
+    timeout_ms = 10000,
+  },
+  servers = {
+    ['lua_ls'] = { 'lua' },
+    ['eslint'] = { 'javascript', 'typescript' },
+  }
+})
+
+require('lspconfig').eslint.setup({})
 require('lspconfig').lua_ls.setup({})
 
 vim.opt.signcolumn = 'yes'
@@ -24,8 +38,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
     vim.keymap.set({ 'n', 'x' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
     vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
-    vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
-    vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', opts)
+    vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_next()<cr>zz', opts)
+    vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_prev()<cr>zz', opts)
   end,
 })
 
