@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>")
 
 vim.keymap.set("n", "op", "o <Esc>k")        -- add line bellow
 vim.keymap.set("n", "oi", "O <Esc>j")        -- add line above
