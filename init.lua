@@ -1,3 +1,14 @@
-vim.g.mapleader =  " "
- 
-require("mysetup")
+require("mysetup.options")
+require("mysetup.remap")
+require("mysetup.lazy")
+require("mysetup.gruvbox")
+require("mysetup.lsp")
+require("mysetup.telescope")
+require("mysetup.treesitter")
+require("mysetup.harpoon")
+require("mysetup.fugitive")
+require("mysetup.cmp")
+require("mysetup.editorconfig")
+require("mysetup.gitsigns")
+require("mysetup.gitconflict")
+require("mysetup.lualine")

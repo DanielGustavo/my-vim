@@ -6,7 +6,15 @@ local options = {
   shiftwidth = 2,
 
   number = true,
-  relativenumber = true
+  relativenumber = true,
+
+  swapfile = false,
+  backup = false,
+  undodir = os.getenv("HOME") .. "/.vim/undodir",
+  undofile = true,
+
+  hlsearch = false,
+  incsearch = true,
 }
 
 -- Apply options

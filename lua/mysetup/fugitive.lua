@@ -1,2 +1,2 @@
-nmap("<leader>gg", ":vertical Git<CR> :vertical res -45<CR>") -- open git status
-nmap("<leader>gd", ":Gvdiff<CR>") -- open git diff
+vim.keymap.set("n", "<leader>gg", ":vertical Git<CR> :vertical res -70<CR>") -- open git status
+vim.keymap.set('n', "<leader>gd", ":Gvdiffsplit<CR>")
