@@ -7,12 +7,9 @@ lsp_zero.format_on_save({
   },
   servers = {
     ['lua_ls'] = { 'lua' },
-    ['eslint'] = { 'javascript', 'typescript' },
+    ['eslint'] = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact' },
   }
 })
-
-require('lspconfig').eslint.setup({})
-require('lspconfig').lua_ls.setup({})
 
 vim.opt.signcolumn = 'yes'
 
