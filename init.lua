@@ -1,6 +1,7 @@
 require("mysetup.options")
 require("mysetup.remap")
 require("mysetup.lazy")
+require("mysetup.autotag")
 require("mysetup.gruvbox")
 require("mysetup.lsp")
 require("mysetup.telescope")

@@ -52,5 +52,7 @@ require("lazy").setup({
     'stevearc/oil.nvim',
     opts = {},
     dependencies = { { "echasnovski/mini.icons", opts = {} } },
-  }
+  },
+
+  { 'windwp/nvim-ts-autotag' }
 })
