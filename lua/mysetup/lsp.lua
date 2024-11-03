@@ -44,7 +44,20 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   handlers = {
     function(server_name)
-      require('lspconfig')[server_name].setup({})
+      if server_name == 'ts_ls' then
+        require('lspconfig').ts_ls.setup({
+          init_options = {
+            plugins = {
+              {
+                name = "@styled/typescript-styled-plugin",
+                location = os.getenv("HOME") .. "/node_modules/@styled/typescript-styled-plugin"
+              },
+            },
+          }
+        })
+      else
+        require('lspconfig')[server_name].setup({})
+      end
     end,
   },
 })
