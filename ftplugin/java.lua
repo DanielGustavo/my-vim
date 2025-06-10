@@ -1,0 +1,59 @@
+--local jdtls = require('jdtls')
+--
+--local lombok_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls/lombok.jar"
+--local root_dir = vim.fs.dirname(vim.fs.find({ 'gradlew', '.git', 'mvnw' }, { upward = true })[1])
+--
+--local workspace_dir = vim.fn.stdpath("data") .. "/jdtls-workspace/" .. vim.fn.fnamemodify(root_dir, ":p:h:t")
+--vim.fn.mkdir(workspace_dir, "p")
+--
+--local config = {
+--  cmd = {
+--    --    --'java',
+--    --    '/usr/lib/jvm/java-21-openjdk-amd64/bin/java',
+--    --    '-javaagent:' .. lombok_path,
+--    --    '-Xbootclasspath/a:' .. lombok_path,
+--    --    '-Declipse.application=org.eclipse.jdt.ls.core.id1',
+--    --    '-Dosgi.bundles.defaultStartLevel=4',
+--    --    '-Declipse.product=org.eclipse.jdt.ls.core.product',
+--    --    '-Dlog.protocol=true',
+--    --    '-Dlog.level=ALL',
+--    --    '-Xmx1g',
+--    --    --'--add-modules=ALL-SYSTEM',
+--    --    --'--add-modules', 'jdk.compiler',
+--    --    '--add-modules', 'jdk.compiler,java.compiler',
+--    --    '--add-opens', 'java.base/java.util=ALL-UNNAMED',
+--    --    '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+--    --    '-jar',
+--    --    '/home/gus/jdt-language-server/plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar',
+--    --    '-configuration',
+--    --    '/home/gus/jdt-language-server/config_linux',
+--    --    '-data', workspace_dir,
+--
+--    ----'/usr/lib/jvm/java-21-openjdk-amd64/bin/java',
+--    '/usr/lib/jvm/java-17-openjdk-amd64/bin/java',
+--    '-Declipse.application=org.eclipse.jdt.ls.core.id1',
+--    '-Dosgi.bundles.defaultStartLevel=4',
+--    '-Declipse.product=org.eclipse.jdt.ls.core.product',
+--    '-Dlog.protocol=true',
+--    '-Dlog.level=ALL',
+--    '-Xms1g',
+--    '--add-modules=ALL-SYSTEM',
+--    '--add-opens', 'java.base/java.util=ALL-UNNAMED',
+--    '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+--    '-jar',
+--    '/home/gus/jdt-language-server/plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar',
+--    '-configuration', '/home/gus/jdt-language-server/config_linux',
+--    '-data', workspace_dir
+--  },
+--  root_dir = root_dir,
+--  settings = {
+--    compiler = {
+--      annotationProcessing = {
+--        enabled = true
+--      }
+--    }
+--  }
+--}
+--
+--
+--jdtls.start_or_attach(config)

@@ -54,5 +54,7 @@ require("lazy").setup({
     dependencies = { { "echasnovski/mini.icons", opts = {} } },
   },
 
-  { 'windwp/nvim-ts-autotag' }
+  { 'windwp/nvim-ts-autotag' },
+
+  { 'mfussenegger/nvim-jdtls' }
 })
